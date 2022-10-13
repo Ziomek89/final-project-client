@@ -20,7 +20,7 @@ function PersonalForm(props){
       infoId: props.infoId
     };
     const storedToken = localStorage.getItem('authToken');
-    axios.post('http://localhost:3001/api/personals', personalObject, {
+    axios.post(`${process.env.REACT_APP_BACKEND_URL}/api/personals`, personalObject, {
         headers: {
             authorization: `Bearer ${storedToken}`
         }

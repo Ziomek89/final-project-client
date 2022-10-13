@@ -20,7 +20,7 @@ function SingleItemPage(){
 
     const storedToken = localStorage.getItem('authToken');
 
-    axios.get(`http://localhost:3001/api/infos/${infoId}`, {
+    axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/infos/${infoId}`, {
       headers: {
         authorization: `Bearer ${storedToken}`
       }
@@ -31,7 +31,7 @@ function SingleItemPage(){
 
   const deleteSingleItem = infoId => {
     const storedToken = localStorage.getItem('authToken');
-    axios.delete(`http://localhost:3001/api/infos/${infoId}`, {
+    axios.delete(`${process.env.REACT_APP_BACKEND_URL}/api/infos/${infoId}`, {
       headers: {
         authorization: `Bearer ${storedToken}`
       }

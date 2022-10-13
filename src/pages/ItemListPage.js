@@ -10,7 +10,7 @@ function ItemListPage(){
 
     const storedToken = localStorage.getItem('authToken');
 
-    axios.get('http://localhost:3001/api/infos',
+    axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/infos`,
      {
       headers: {
         authorization: `Bearer ${storedToken}`
