@@ -1,6 +1,37 @@
 .App {
   text-align: center;
 }
+.Home {
+  min-height: 100vh;
+  background-image: url('/public/images/erik-mclean-hbsL-YB2BkQ-unsplash.jpg');
+  background-size: cover;
+  color: white;
+}
+
+.Info {
+  min-height: 100vh;
+  background-image: url('/public/images/erik-mclean-fDAv7lWawtk-unsplash.jpg');
+  /* opacity: 0.5; */
+  background-size: cover;
+}
+
+.Data {
+  min-height: 100vh;
+  background-image: url('/public/images/mick-haupt-KtTF68ZjBak-unsplash.jpg');
+  background-size: cover;
+}
+
+.Add {
+  min-height: 100vh;
+  background-image: url('/public/images/giorgio-trovato-W7KDN4OB_zI-unsplash.jpg');
+  background-size: cover;
+}
+
+.Card{
+  min-height: 100vh;
+  background-color: aquamarine;
+}
+
 
 .App-logo {
   height: 40vmin;
