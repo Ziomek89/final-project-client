@@ -53,7 +53,7 @@ function PokemonCard(){
          
                 <div>
                 {singlePokemonCard.tcgplayer ? (
-                 <a href={singlePokemonCard.tcgplayer.url}>Sell price </a>
+                 <a href={singlePokemonCard.tcgplayer.url} target="_blank">Sell price </a>
                  ) : <p>No sell price</p>}
                 </div>
                 <p>Card Id: {singlePokemonCard.id}</p>

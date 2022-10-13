@@ -39,7 +39,7 @@ function PokemonCardId(){
         <p>{pokemonName.name}</p>
         <img src={pokemonName.images.small} alt={pokemonName.name} height={250}/>
         </div>
-        <a href={pokemonName.tcgplayer.url}>Sell Price</a></>
+        <a href={pokemonName.tcgplayer.url} target="_blank">Sell Price</a></>
         
              
         
